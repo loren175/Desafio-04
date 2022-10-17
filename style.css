@@ -29,11 +29,17 @@ body::before {
     position: absolute;
 }
 
-main {
-    max-width: 60.0rem;
-    margin: 6.4rem auto;
-    padding-bottom: 6.0rem;
+.page {
     display: grid;
+    
+    max-width: 38.4rem;
+    margin: 0 auto;
+}
+
+main {
+    margin: 6.4rem auto;
+    display: grid;
+    padding: 1.4rem 3.2rem 6rem;
  
 }
 
@@ -91,13 +97,13 @@ header::before {
 .card {
     margin: 3.2rem 3.2rem 0 3.2rem;
     transition: all 200ms;
+    position: relative;
 }
 
 .card img {
-    //width: 100%;
-    //height: auto;
     animation-name: downup;
     animation-duration: 900ms;
+    object-fit: cover;
 }
 
 footer {
@@ -194,3 +200,4 @@ footer {
         text-decoration: none;
     }
 }
+
